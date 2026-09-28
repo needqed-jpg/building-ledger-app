@@ -6,8 +6,8 @@ import pandas as pd
 st.set_page_config(page_title="건축물대장 간편 조회", page_icon="🏢", layout="wide")
 
 # API 키 설정 (Streamlit Secrets에서 불러오거나 직접 입력)
-DATA_GO_KR_KEY = st.secrets.get("DATA_GO_KR_KEY", "0988d8e915f78b6a7fab52b3e27113fb3575e71995de9db53cb21e1d009af3ae")
-JUSO_API_KEY = st.secrets.get("JUSO_API_KEY", "devU01TX0FVVEgyMDI2MDkxODE1MDYzNTEyMDQyNzI=")
+DATA_GO_KR_KEY = "0988d8e915f78b6a7fab52b3e27113fb3575e71995de9db53cb21e1d009af3ae"
+JUSO_API_KEY = "U01TX0FVVEgyMDI2MDkyODE3MjgyNTEyMDUxMjI="
 
 # 1. 주소 변환 함수
 def parse_address_to_codes(api_key: str, address: str):
